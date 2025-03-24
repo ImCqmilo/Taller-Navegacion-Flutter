@@ -1,6 +1,5 @@
 # hola_mundo
-
-A new Flutter project.
+Proyecto Flutter que utiliza navegación go_router, GridView, TabBar, un ListView y los registros del ciclo de vida en print() para conocer que procesos se estan ejecutando.
 
 ## Getting Started
 
