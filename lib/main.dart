@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hola_mundo/api_screen.dart';
 import 'package:hola_mundo/form_view.dart';
 import 'dart:async';
 import 'dart:isolate';
@@ -31,6 +32,7 @@ final GoRouter _router = GoRouter(
     GoRoute(path: '/students', builder: (context, state) => const StudentListScreen()),
     GoRoute(path: '/timer', builder: (context, state) => const TimerScreen()),
     GoRoute(path: '/isolate', builder: (context, state) => const HeavyTaskScreen()),
+    GoRoute(path: '/api',builder: (context, state) => const ApiScreen(),),
   ],
 );
 
@@ -48,6 +50,7 @@ class HomeScreen extends StatelessWidget {
           ElevatedButton(onPressed: () => context.push('/students'), child: const Text('Lista de Estudiantes')),
           ElevatedButton(onPressed: () => context.push('/timer'), child: const Text('Temporizador')),
           ElevatedButton(onPressed: () => context.push('/isolate'), child: const Text('Tarea Pesada')),
+          ElevatedButton(onPressed: () => context.push('/api'),child: const Text('Ver Usuarios API')),
         ],
       ),
     );
